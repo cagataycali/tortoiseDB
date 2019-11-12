@@ -35,7 +35,7 @@ class MongoShell {
   }
 
   connect() {
-    return MongoClient.connect(this._url, { useNewUrlParser: true })
+    return MongoClient.connect(this._url, { useNewUrlParser: true, useUnifiedTopology: true })
       .then(client => {
         this._client = client;
         return this._client.db(this._dbName);
