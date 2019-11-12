@@ -7,7 +7,7 @@ class MongoShell {
     this._syncFromStore = 'syncFromStore';
     this._syncToStore = 'syncToStore';
     this._url = url;
-    this._dbName = `tortoiseDB-${name}`;
+    this._dbName = name};
 
     let db;
     this.connect()
